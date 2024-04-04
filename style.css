@@ -1,0 +1,248 @@
+ .nav-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+
+.nav-link a:hover {
+    color: red;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-single {
+    margin-right: 15px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: 2px solid lightcoral;
+    color: orchid;
+    font-weight: bold;
+    border-radius: 0px;
+    transition-duration: 1s;
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+}
+
+.carousel {
+    width: 80%; 
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.image-details div {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.image-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.upper-boxes,
+.lower-boxes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.upper-boxes > div,
+.lower-boxes > div {
+    flex: 1;
+    max-width: 300px; 
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto; 
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.img-details div {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.img-details {
+    display: flex;
+    justify-content: center;
+}
+
+.c {
+    text-align: center;
+}
+
+.explore img {
+    justify-content: center;
+}
+
+.footer-color {
+    padding: 20px 0;
+    justify-content: center;
+    color : white;
+    background-color: grey;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+}
+
+.companys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+/*working section*/
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 50px 0px;
+    margin: 10px 100px;
+    
+}
+
+.text-container {
+    margin-left: 20px; 
+}
+
+.join
+{
+    color : white;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 50px 0px;
+    margin: 10px 100px;
+}
+
+.about-sub-section 
+{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+} 
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 576px) {
+    /* Adjust styles for small devices (≥576px) */
+    .nav-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-top: 0;
+    }
+
+    .carousel-item {
+        text-align: left;
+    }
+
+    .upper-boxes,
+    .lower-boxes {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .image-details {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .text-container {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .about-sub-section {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .work,
+    .join {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-color {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .companys {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Adjust font sizes */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}
